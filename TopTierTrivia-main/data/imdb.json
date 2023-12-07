@@ -1,9 +1,81 @@
 [
     {
-        "question": "Which movie do users rate higher?",
-        "name1": "Movie #1",
+        "question": "Which movie is the Academy Award for Best Picture at 2022?",
+        "name1": "Everything Everywhere All at Once",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "CODA",
+        "url2": "__sample_photo_url_for_movie_4__"
+    },
+
+    {
+        "question": "Which movie do users rate higher on rottentomatoes.com?",
+        "name1": "The Peasants",
         "url1": "__sample_photo_url__",
-        "name2": "Movie #2",
+        "name2": "Love Actually",
         "url2": "__sample_photo_url__"
+    },
+    
+    {
+        "question": "Which movie tells the story of war?",
+        "name1": "West Side Story",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "1917",
+        "url2": "__sample_photo_url_for_movie_4__"
+    },
+
+    {
+        "question": "Which two movies have the same lead actor?",
+        "name1": "Top Gun, Rain Man",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Dunkirk, The Post",
+        "url2": "__sample_photo_url_for_movie_4__"
+    },
+
+    {
+        "question": "Which movie was made by Hayao Miyazaki?",
+        "name1": "Spirited Away",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Your Name",
+        "url2": "__sample_photo_url_for_movie_4__"
+    },
+
+    {
+        "question": "Which movie earned more?",
+        "name1": "Star Wars: The Force Awakens",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Titanic",
+        "url2": "__sample_photo_url_for_movie_4__"
+    },
+
+    {
+        "question": "Which movie is about a future apocalypse?",
+        "name1": "2012",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "2046",
+        "url2": "__sample_photo_url_for_movie_4__"
+    },
+
+    {
+        "question": "Which movie is a love story?",
+        "name1": "The Invisible Guest",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Roman Holiday",
+        "url2": "__sample_photo_url_for_movie_4__"
+    },
+
+    {
+        "question": "Which movie series has different actors playing the same character?",
+        "name1": "Spider-Man",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Iron Man",
+        "url2": "__sample_photo_url_for_movie_4__"
+    },
+
+    {
+        "question": "Which movie is not based on a novel?",
+        "name1": "Pride and Prejudice",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Call Me By Your Name",
+        "url2": "__sample_photo_url_for_movie_4__"
     }
 ]
