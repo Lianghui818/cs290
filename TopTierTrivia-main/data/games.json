@@ -1,0 +1,20 @@
+[
+    {
+        "name": "IMDB",
+        "title": "IMDB Movie Ratings",
+        "description": "The player will be prompted two different movies, and the player is to guess which movie of the two has the higer rating based on IMDB reviews.",
+        "url": "__sample_photo_url__"
+    },
+    {
+        "name": "Example",
+        "title": "Example Game",
+        "description": "Description of example game.",
+        "url": "__sample_photo_url__"
+    },
+    {
+        "name": "Example",
+        "title": "Example Game",
+        "description": "Description of example game.",
+        "url": "__sample_photo_url__"
+    }
+]

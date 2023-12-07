@@ -1,0 +1,294 @@
+/* Color scheme/style */
+:root
+{
+    --primarylight: #CDE2DC;
+    --primarycolor: #309179;
+    --primarydark: #005741;
+    
+    --secondarylight: #E497BD;
+    --secondarycolor: #CE6196;
+    --secondarydark: #AE3671;
+    
+    --highlightlight: #FFD566;
+    --highlightcolor: #FFCE4B;
+    --highlightdark: #CFA32D;
+
+    --darkest: #050810;
+}
+
+/* Default settings */
+html
+{
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+    /* Universal background */
+    background-color: var(--primarylight);
+}
+h1, h2, h3
+{
+    font-family: 'Rubik', 'Helvetica', sans-serif;
+}
+body
+{
+    /* Remove padding on sides */
+    margin: 0px;
+    padding: 0px;
+}
+a
+{
+    /* Remove defaults */
+    color: inherit;
+    text-decoration: unset;
+    text-decoration-line: unset;
+}
+.hidden
+{
+    /* Hidden means don't display. */
+    display: none;
+    visibility: hidden;
+}
+
+/* Page header */
+header
+{
+    /* Size */
+    width: 100vw;
+    padding: 15px 0px;
+    margin: 0px;
+
+    /* Bottom Border */
+    border-bottom: 3px solid var(--darkest);
+
+    /* Content Spacing */
+    /* display: flex;
+    justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+
+    /* Background */
+    color: var(--darkest);
+    background-color: var(--secondarylight);
+}
+header h1
+{
+    margin: 0px;
+    font-size: 100px;
+}
+
+/* Main contents */
+#main_container
+{
+    /* Positioning/sizing */
+    padding: 25px 20px 20px 40px;
+    height: max-content;
+}
+
+
+/* Game selection screen */
+.game_select
+{
+    display: block;
+}
+.game_select_title_desc
+{
+    /* text-align: center; */
+    flex-direction: row;
+}
+#game_select_options
+{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    align-items: flex-start; */
+    flex-direction: column; /* Changed to column for a single column layout */
+    align-items: center; /* Center children horizontally */
+    width: 100%; /* Set the width to 70% of the viewport */
+    margin: 0 auto; /* Center the container on the screen */
+}
+.option_contents
+{
+    width: 100%; /* Make the children occupy the full width of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 10px 0; /* Adjust margin for vertical spacing */
+
+    display: block;
+    position: relative;
+
+    /* Sizing/spacing options */
+    max-width: 600px;
+    min-width: 250px;
+    padding: 15px;
+    margin: 10px 15px 5px 0px;
+
+    /* Border/background */
+    border: 2px groove var(--darkest);
+    border-radius: 4px;
+    background-color: var(--secondarylight);
+
+    /* Flex options */
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: start; /* Align items to the start of the box */
+    gap: 10px; /* Add some space between the image and the text */
+
+}
+
+.option_contents:hover {
+    transform: translateY(-5px);
+ }
+
+.option_contents_image_container {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.option_contents a
+{
+    /* Make the links look like links*/
+    color: var(--primarydark);
+    text-decoration-line: underline;
+}
+.option_info_button
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.option_info_container
+{
+    /* Positioning, top right by */
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+}
+.option_info_contents
+{
+    position: relative;
+    right: 50%;
+
+    /* Spacing/Sizing */
+    margin: 5px;
+    padding: 12px 25px;
+    width: max-content;
+    max-width: 500px;
+    height: fit-content;
+    text-align: center;
+
+    /* Border/background */
+    border: 2px solid var(--darkest);
+    border-radius: 12px;
+    background-color: var(--highlightlight);
+}
+.option_info_container h3, .option_info_container p
+{
+    margin: 5px 0px;
+}
+.option_info_close_button
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+
+/* Game play screen */
+#game_containter
+{
+    /* Positioning of contents */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.game_box
+{
+    /* Sizing */
+    margin: 15px 25px;
+    padding: 10px 20px;
+
+    /* Border/Background */
+    border: 4px solid var(--darkest);
+    border-radius: 3px;
+    background-color: var(--secondarylight);
+
+    /* Shadow */
+    box-shadow: 8px 8px 10px #0000006F;
+}
+#game_question
+{
+    /* Sizing of questio text */
+    width: max-content
+}
+#game_options
+{
+    /* Positioning of options */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: center;
+}
+.game_option
+{
+    position: relative;
+    align-self: center;
+    text-align: center;
+
+    /* Sizing options */
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: min-content;
+
+    /* It's a link also! */
+    cursor: pointer;
+}
+.game_option:hover
+{
+    /* Moves a little so intice you to click it? */
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--highlightlight);
+}
+.game_option:active
+{
+    /* Gives some feedback when clicking */
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--highlightcolor);
+}
+
+/* Game play between-round popups */
+/* TBD */
+
+/* 404 page styling */
+#page_404
+{
+    display: flex;
+    justify-content: center;
+}
+#container_404
+{
+    /* Sizing */
+    margin: 30px 15px;
+    padding: 20px 30px;
+    width: fit-content;
+    height: fit-content;
+
+    /* Background/border */
+    border-radius: 5px;
+    border: 3px solid var(--darkest);
+    background-color: var(--primarydark);
+}
+#container_404>h2
+{
+    margin: 0px;
+    text-align: center;
+    font-size: 3.25rem;
+    color: var(--primarylight)
+}

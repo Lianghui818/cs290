@@ -1,0 +1,9 @@
+[
+    {
+        "question": "Which movie do users rate higher?",
+        "name1": "Movie #1",
+        "url1": "__sample_photo_url__",
+        "name2": "Movie #2",
+        "url2": "__sample_photo_url__"
+    }
+]
