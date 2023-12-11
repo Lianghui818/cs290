@@ -47,19 +47,40 @@ app.get('/', (req, res) => {
 function serveGamePage(res, next, name, qIndex) {
     // Check if game exists
     var game = gameData[name.toLowerCase()]
-    if (game && qIndex >= 0 && qIndex < game.length)
-    {
-        console.log("- Sending game page of (" + game + "), index: (" + qIndex + ") to client")
+    // if (game && qIndex >= 0 && qIndex < game.length)
+    // {
+    //     console.log("- Sending game page of (" + game + "), index: (" + qIndex + ") to client")
 
-        // If found, serve that game's page
+    //     // If found, serve that game's page
+    //     res.status(200).render('gamePage', {
+    //         question: game[qIndex].question,
+    //         name1: game[qIndex].name1,
+    //         url1: game[qIndex].url1,
+    //         name2: game[qIndex].name2,
+    //         url2: game[qIndex].url2,
+    //         script: '/game.js'
+    //     })
+    // }
+
+    if (!game) {
+        next(); // Game not found, move to next middleware
+        return;
+    }
+
+    var totalQuestions = game.length; // Assuming game is an array of questions
+
+    if (qIndex >= 0 && qIndex < totalQuestions) {
+        console.log("- Sending game page of (" + name + "), index: (" + qIndex + ") to client");
+
         res.status(200).render('gamePage', {
             question: game[qIndex].question,
             name1: game[qIndex].name1,
             url1: game[qIndex].url1,
             name2: game[qIndex].name2,
             url2: game[qIndex].url2,
-            script: '/game.js'
-        })
+            script: '/game.js',
+            nextQuestionIndex: qIndex + 1 < totalQuestions ? qIndex + 1 : null // Pass next question index or null if it's the last question
+        });
     }
     else
     {

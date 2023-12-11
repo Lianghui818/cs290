@@ -1,0 +1,228 @@
+[
+    {
+        "question": "Which movie is the Academy Award winner for Best Picture of 2022?",
+        "name1": "Everything Everywhere All at Once",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "CODA",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "Everything Everywhere All at Once"
+    },
+
+    {
+        "question": "Which movie do users rate higher on rottentomatoes.com?",
+        "name1": "The Peasants",
+        "url1": "__sample_photo_url__",
+        "name2": "Love Actually",
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "The Peasants (65%)"
+       
+    },
+    
+    {
+        "question": "Which movie tells the story of war?",
+        "name1": "West Side Story",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "1917",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "1917"
+    },
+
+    {
+        "question": "Which two movies have the same lead actor?",
+        "name1": "Top Gun, Rain Man",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Dunkirk, The Post",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "Top Gun, Rain Man"
+    },
+
+    {
+        "question": "Which movie was made by Hayao Miyazaki?",
+        "name1": "Spirited Away",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Your Name",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "Spirited Away"
+    },
+
+    {
+        "question": "Which movie earned more?",
+        "name1": "Star Wars: The Force Awakens",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Titanic",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "Star Wars: The Force Awakens"
+    },
+
+    {
+        "question": "Which movie is about a future apocalypse?",
+        "name1": "2012",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "2046",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "2012"
+    },
+
+    {
+        "question": "Which movie is a love story?",
+        "name1": "The Invisible Guest",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Roman Holiday",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "Roman Holiday"
+    },
+
+    {
+        "question": "Which movie series has different actors playing the same character?",
+        "name1": "Spider-Man",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Iron Man",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "Spider-Man"
+    },
+
+    {
+        "question": "Which movie is not based on a novel?",
+        "name1": "Pride and Prejudice",
+        "url1": "__sample_photo_url_for_movie_3__",
+        "name2": "Call Me By Your Name",
+        "url2": "__sample_photo_url_for_movie_4__",
+        "correctAnswer": "Call Me By Your Name"
+    },
+
+    {
+        "quetions": "Who has played in more movies?", 
+        "name1": "Brad Pitt",
+        "url1": "__sample_photo_url__",
+        "name2": "Angelina Jolie", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Angelina Jolie (67)"
+    },
+
+    {
+        "quetions": "What movie has earned more money?", 
+        "name1": "Elf",
+        "url1": "__sample_photo_url__",
+        "name2": "Home Alone", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Home Alone (476.7 Million)"
+    },
+
+    {
+        "quetions": "What movie earned more money?", 
+        "name1": "Barbie",
+        "url1": "__sample_photo_url__",
+        "name2": "Oppenheimer", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Barbie (1.441 Billion)"
+    },
+
+    {
+        "quetions": "Who has played in more movie?", 
+        "name1": "Emily Blunt",
+        "url1": "__sample_photo_url__",
+        "name2": "Jennifer Aniston", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Jennifer Aniston (72)"
+    },
+
+    {
+        "quetions": "Who has played in more movie?", 
+        "name1": "Samuel Jackson",
+        "url1": "__sample_photo_url__",
+        "name2": "Tom Hanks", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Samuel Jackson (211)"
+    },
+
+    {
+        "quetions": "What was the name of the volleyball in cast away (starting Tom Hanks)?", 
+        "name1": "Wilson",
+        "url1": "__sample_photo_url__",
+        "name2": "Nelson", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Wilson"
+    },
+
+    {
+        "quetions": "Was \"Home Alone\" a book or movie first?", 
+        "name1": "Book",
+        "url1": "__sample_photo_url__",
+        "name2": "Movie", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Movie"
+    },
+
+    {
+        "quetions": "What was the first Disney movie?", 
+        "name1": "Steamboat Willie",
+        "url1": "__sample_photo_url__",
+        "name2": "Snow White and The Seven Dwarfs", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Steamboat Willie"
+    },
+
+    {
+        "quetions": "Was \"Alien\" a book or movie first?", 
+        "name1": "Book",
+        "url1": "__sample_photo_url__",
+        "name2": "Movie", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Movie"
+    },
+
+    {
+        "quetions": "Was \"The Hunger Games\" a book or movie first?", 
+        "name1": "Book",
+        "url1": "__sample_photo_url__",
+        "name2": "Movie", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Book"
+    },
+
+    {
+        "quetions": "In \"Charlie and the Chocolate Factory,\" what is Charlie's last name?", 
+        "name1": "Augustus",
+        "url1": "__sample_photo_url__",
+        "name2": "Bucket", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Bucket"
+    },
+
+    {
+        "quetions": "What streaming service has more subscribers?", 
+        "name1": "Amazon Prime",
+        "url1": "__sample_photo_url__",
+        "name2": "Netflix", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Netflix (247.2 Million)"
+    },
+
+    {
+        "quetions": "Who has won the most Oscars?", 
+        "name1": "Jack Nicholson",
+        "url1": "__sample_photo_url__",
+        "name2": "Walt Disney", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Walt Disney (22)"
+    },
+
+    {
+        "quetions": "Which movie has made more money?", 
+        "name1": "The Dark Knight",
+        "url1": "__sample_photo_url__",
+        "name2": "Avengers: Endgame", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Avengers: Endgame (2.8 Billion)"
+    },
+
+    {
+        "questions": "Which movie is the highest grossing of all time?",
+        "name1": "Avatar", 
+        "url1": "__sample_photo_url__",
+        "name2": "The Lion King", 
+        "url2": "__sample_photo_url__",
+        "correctAnswer": "Avatar (2.923 Billion)"
+    }
+]
+
