@@ -1,3 +1,4 @@
+
 // Hide modal popups by default
 var levelEndBackdrop = document.getElementById('level_end_backdrop')
 if (levelEndBackdrop)

@@ -13,6 +13,7 @@
     --highlightcolor: #FFCE4B;
     --highlightdark: #CFA32D;
 
+    --modaltransparent: #1d2a4d5e;
     --darkest: #050810;
 }
 
@@ -25,7 +26,7 @@ html
     /* Universal background */
     background-color: var(--primarylight);
 }
-h1, h2, h3
+h1, h2, h3, button
 {
     font-family: 'Rubik', 'Helvetica', sans-serif;
 }
@@ -264,7 +265,154 @@ header h1
 }
 
 /* Game play between-round popups */
-/* TBD */
+.modal_backdrop
+{
+    /* Position & Sizing */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    display: grid;
+    align-content: center;
+
+    /* Color of backdrop */
+    background-color: var(--modaltransparent);
+}
+.modal_window
+{
+    /* Position & Sizing */
+    width: 65vw;
+    height: 55vh;
+    padding: 30px 50px;
+    margin: auto;
+
+    /* Border & background stuff */
+    border: 3px solid var(--darkest);
+    border-radius: 6px;
+    background-color: var(--secondarylight);
+
+    /* Content spacing */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    font-size: 1.65rem;
+}
+.modal_window p, .modal_window h2
+{
+    /* Text by default has some crazy margins. Looks horrible.*/
+    margin: 10px 5px;
+}
+.choice_text_container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.choice_text_block
+{
+    width: fit-content;
+    padding: 5px 8px;
+}
+#choice_text
+{
+    /* Border/background */
+    border: 2px solid var(--darkest);
+    border-radius: 2px;
+    background-color: var(--highlightlight);
+
+    /* Shadow */
+    box-shadow: 3px 3px 1px 1px var(--modaltransparent);
+}
+#level_success_text
+{
+    font-weight: bolder;
+    text-shadow: 3px 3px var(--modaltransparent);
+    font-size: 3.5rem;
+}
+.modal_hrule
+{
+    /* Visual styling for separation */
+    width: 80%;
+    color: var(--darkest);
+    box-shadow: 2px 2px 1px 1px var(--modaltransparent);
+    
+    /* Physical separation */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#modal_category_premable
+{
+    font-style: italic;
+    margin-bottom: 0px;
+}
+#modal_category_title
+{
+    margin-top: 0px;
+    font-weight: bolder;
+    text-shadow: 3px 3px var(--modaltransparent);
+    font-size: 3.5rem;
+}
+#modal_category_text
+{
+    color: var(--highlightlight);
+}
+.accuracy_text
+{
+    padding: 3px 6px;
+
+    /* Border/background */
+    border: 2px solid var(--darkest);
+    border-radius: 4px;
+    background-color: var(--primarycolor);
+
+    /* Shadow */
+    box-shadow: 3px 3px var(--modaltransparent);
+}
+.modal_button
+{
+    cursor: pointer;
+    position: relative;
+
+    /* Sizing */
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 15px 20px;
+
+    /* Text stuff */
+    font-size: 2rem;
+    color: var(--highlightlight);
+    text-shadow: 3px 3px var(--primarydark);
+
+    /* Border/background */
+    border: 18px inset var(--primarycolor);
+    background: var(--primarycolor);
+}
+.modal_button:hover
+{
+    border-style: outset; /* Switch up the border. Because it looks cool! */
+
+    /* Move it a bit! */
+    left: 4px;
+    bottom: 4px;
+}
+.modal_button:active
+{
+    /* Tint it a bit. Or shade it technically */
+    filter: brightness(0.8);
+
+    /* Move it a bit inwards */
+    left: 2px;
+    bottom: 2px;
+}
 
 /* 404 page styling */
 #page_404
