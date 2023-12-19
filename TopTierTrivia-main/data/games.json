@@ -3,18 +3,18 @@
         "name": "movieMayhem",
         "title": "Movie Mayhem",
         "description": "Movie Mayhem: Unleash your inner film buff! Test your knowledge on all things movies - from classics to blockbusters, actors to quotes. Lights, camera, trivia!",
-        "url": "__sample_photo_url__"
+        "url": "/data/images/m.png"
     },
     {
         "name": "Example",
-        "title": "Example Game",
-        "description": "Description of example game.",
-        "url": "__sample_photo_url__"
+        "title": "Other Idea?",
+        "description": "Please contact us by email: zheng@oregonstate.edu",
+        "url": "/data/images/m.png"
     },
     {
         "name": "Example",
-        "title": "Example Game",
-        "description": "Description of example game.",
-        "url": "__sample_photo_url__"
+        "title": "Coming Soon!",
+        "description": "Coming soon, stay tuned!",
+        "url": "/data/images/m.png"
     }
 ]

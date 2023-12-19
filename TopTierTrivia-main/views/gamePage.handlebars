@@ -17,14 +17,63 @@
             </div>        
         </div>
         <div id="option2" class="game_option game_box">
-            <div class="option1_image_container">
+            <div class="option2_image_container">
                 <img src="{{url2}}" alt="{{name2}}">
-                <div class="option1_keyword">
-                    <div class="option1_keyword_text">
+                <div class="option2_keyword">
+                    <div class="option2_keyword_text">
                         <h3>{{name2}}</h3>
                     </div>
                 </div>
             </div>      
+        </div>
+    </div>
+</div>
+
+<div class="modal_backdrop" id="level_end_backdrop">
+    <div class="modal_window">
+        <div class="choice_text_container">
+            <p class="choice_text_block">You chose: </p>
+            <p class="choice_text_block" id="choice_text">OPTION</p>
+        </div>
+        <div class="level_success_container">
+            <h2 id="level_success_text">
+                Correct..?!
+            </h2>
+        </div>
+        <div id="level_answer_details_container">
+            <p id="level_answer_details_text">
+                That's because... of something!
+            </p>
+        </div>
+        <div class="level_stats_container">
+            <p id="level_stats_containing_text">
+                <span id="level_stats_text">10%</span> of people got it right!
+            </p>
+        </div>
+        <hr class="modal_hrule">
+        <div class="modal_buttons_container">
+            <button class="modal_button" id="next_question_button">Next</button>
+            <button class="modal_button quit_button">Quit</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal_backdrop" id="game_end_backdrop">
+    <div class="modal_window">
+        <div class="modal_category_container">
+            <p id="modal_category_premable">In the category of...</p>
+            <h2 id="modal_category_title">[ <span id="modal_category_text">Movie Rankings or Something!</span> ]</p>
+        </div>
+        <hr class="modal_hrule">
+        <div class="accuracy_container" id="self_accuracy_container">
+            <p>Your accuracy: <span class="accuracy_text" id="self_accuracy_text">~75%?</span></p>
+        </div>
+        <div class="accuracy_container" id="total_accuracy_container">
+            <p>Average accuracy: <span class="accuracy_text" id="total_accuracy_text">~55%!</span></p>
+        </div>
+        <hr class="modal_hrule">
+        <div class="modal_buttons_container">
+            <button class="modal_button quit_button">Quit</button>
         </div>
     </div>
 </div>
