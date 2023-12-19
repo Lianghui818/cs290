@@ -1,0 +1,9 @@
+{
+  "name": "assignment-4",
+  "version": "1.0.0",
+  "description": "Simple Node.js-based file server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

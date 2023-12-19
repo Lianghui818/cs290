@@ -1,0 +1,246 @@
+/*
+ * You should write your CSS in this file.  Don't forget to add your name and
+ * @oregonstate.edu email address below.
+ *
+ * name: Lianghui Wang
+ * email: wangl9@oregonstate.edu
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: #fff;
+   color: #333;
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   display: flex;
+   align-items: center; 
+   background-color: black;
+   /* padding: 10px 20px; */
+}
+
+.header-image-container {
+   display: flex;
+   flex-direction: row;        
+   align-items: center;  
+   /* vertical-align: middle; */
+}
+
+.site-title {
+   font-family: 'Roboto Slab', serif;
+   font-weight: lighter;
+   font-size: 32px;
+   color: white;
+   display: flex;
+}
+
+.site-title a {
+   font-family: 'Roboto Slab', serif;
+   display: flex;
+   color: white; 
+   text-decoration: none; 
+   font-size: 100px; 
+   /* vertical-align: middle;  */
+}
+
+.content {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 1%;
+   box-sizing: border-box;
+}
+ 
+.filter-container {
+   /* flex-basis: 10%; */
+   width: 250px;
+   height: 500px;
+   background-color: rgb(233, 233, 233); /*灰色背景颜色*/
+   padding: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+}
+
+.filter-container h2 {
+   /* font-size: 25px; */
+   font-weight: 500;
+   color: black;
+}
+
+.filter-input-container {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 10px;  /*输入框的上下间隔*/
+   
+}
+
+.filter-input-label {
+   display: block;
+   margin-bottom: 20px;
+   color: black;
+   margin-right: 10px; /*文字与边框之间的间隔*/
+   font-weight: 500;
+}
+
+/* 输入框和下拉列表 */
+.filter-input{
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.filter-input,
+#filter-city {
+    width: 100%; /* 确保输入框和选择框占用完整的可用宽度 */
+    padding: 8px; /* 添加内部填充以使输入内容更易读 */
+    box-sizing: border-box; /* 使宽度包括内部填充和边框 */
+}
+
+.filter-input-element {
+   display: inline-block; /* 使输入框并排显示 */
+   width: 100%; 
+   margin-right: 10px; /* 在输入框之间添加一点间距 */
+}
+   
+
+.filter-fieldset {
+   border: 1px solid rgb(102, 102, 102);
+   padding: 10px;
+   margin-bottom: 20px;
+   border-radius: 1px;
+   width: 300px;
+}
+
+.filter-fieldset label {
+   font-weight: 500;
+}
+
+.filter-fieldset div {
+   margin-bottom: 10px;
+}
+
+.action-button {
+   background-color: #000;
+   color: #fff;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   width: 100%;
+   /* font-weight: 300; */
+   font-size: 20px;
+}
+
+.action-button:hover {
+   background-color: #f8d198;
+   color: black;
+   padding: 10px 15px;
+   border: 1px solid black;
+}
+
+#posts {
+   flex-basis: 85%;
+   display: flex;
+   flex-direction: row;
+   /* margin-right: 10px; */
+   /* align-items: flex-start; */
+   /* display: grid; */
+   /* grid-template-columns: repeat(3, 1fr); */
+   gap: 30px;
+   /* justify-content: space-around; */
+   /* 按理来说应该缩小窗口会自动分行适应窗口大小 */
+   flex-wrap: wrap;  
+}
+
+.post {
+   background-color: #fff;
+   border: 1px solid rgb(196, 194, 194);
+   border-radius: 5px;
+   margin-left: 25px;  
+   /* post之间的间隔↑ */
+   /* justify-content: space-around;
+   flex-wrap: wrap;    */
+}
+
+.post:hover {
+   transform: translateY(-5px);
+}
+
+.post-image-container img {
+   width: 100%;
+}
+
+.post-image-container {
+   display: flex;
+   justify-content: center;
+}
+
+.post-contents {
+   padding: 20px;
+   width: 400px;
+   height: 600px;
+   
+}
+
+.post-info-container {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-right: 10px; 
+   /* post内title和price和city之间的距离 为什么不生效？ */
+}
+
+.post-title {
+   font-size: 20px;
+   font-weight: 500;
+   /* margin-top: 10px; */
+   color: rgb(255, 145, 0);
+   text-decoration: none;
+   margin-right: 5px; 
+}
+
+.post-title:hover {
+text-decoration: underline;
+}
+
+.post-price{
+width: auto;
+height: auto;
+border: 1px solid rgb(126, 125, 125);
+background-color: rgb(231, 231, 231);
+/* margin:32px; */
+border-radius: 10%;
+margin-right: 5px; 
+}
+.post-city {
+   font-size: 18px;
+   margin: 5px 0;
+   color: black;
+}
+
+
+
+#sell-something-button {
+   background-color: rgb(255, 145, 0);   
+   border: none;                
+   border-radius: 50%;         /* make it circular */
+   width: 64px;                
+   height: 64px;               
+   cursor: pointer;            /* Cursor changes to hand when hovered */
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.25);   /* shadow */
+   transition: transform 0.3s; /* Smooth transform animation */
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+}
+
+#sell-something-button:hover {
+   transform: scale(1.15);     /* Slightly enlarge the button when hovered */
+}
+
+#sell-something-button i {
+   color: white;               /* Color of the plus icon */
+   font-size: 40px;            /* Size of the plus icon */
+}
